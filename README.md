@@ -61,5 +61,40 @@ The Frontend leverages real-time polling to constantly draw new predictions and 
 3. **The AI Predictions Core (`/api/optimization`)**
    The heart of the app. During boot, `main.py` instantiates an ML model that fits the entire four-month `.csv` dataset. The endpoint retrieves all campus rooms, iterates one-by-one by requesting a prediction for the immediate `next hour`, and mathematically rolls a mitigation logic (Full power down vs HVAC throttling) based on the AI's likelihood confidence that the room is empty.
 
-4. **The Schedule Tracker (`/api/timetable`)**
+6. **The Schedule Tracker (`/api/timetable`)**
    Straightforward pass-through reading the daily class timetable CSV payload out as standard JSON dicts. It allows the Frontend to trace physical student movement against what the AI engine is recommending.
+
+---
+
+## 💻 Installation & Setup
+
+Follow these steps to get the Smart Campus Energy Optimizer running on your local machine:
+
+1. **Clone the repository** (or download the folder):
+   ```bash
+   git clone <your-repository-url>
+   cd hackathon
+   ```
+
+2. **Set up a Python Virtual Environment** (Recommended):
+   ```bash
+   python -m venv venv
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+
+3. **Install Backend Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Start the FastAPI Backend Server**:
+   ```bash
+   python main.py
+   ```
+   *The server will boot up the machine learning model, train it on the datasets, and then listen on `http://localhost:8000`.*
+
+5. **Launch the Frontend**:
+   Simply open the `index.html` file in any modern web browser! Double-click it from your file explorer to view the interactive dashboard. No complex Node.js or React setup is required.
