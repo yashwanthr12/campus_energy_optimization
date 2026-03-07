@@ -1,0 +1,631 @@
+day,time,program,year,room,subject
+Monday,09:00-10:00,BCA,1,Room101,Data Structures
+Monday,10:00-11:00,BCA,1,Lab2,Programming
+Monday,11:15-12:15,BCA,1,Room201,Web Development
+Monday,12:15-01:15,BCA,1,Room102,Operating Systems
+Monday,02:00-03:00,BCA,1,Lab1,Operating Systems
+Monday,03:00-04:00,BCA,1,Lab3,Web Development
+Tuesday,09:00-10:00,BCA,1,Room201,Operating Systems
+Tuesday,10:00-11:00,BCA,1,SeminarHall,DBMS
+Tuesday,11:15-12:15,BCA,1,Lab2,Programming
+Tuesday,12:15-01:15,BCA,1,Room202,Web Development
+Tuesday,02:00-03:00,BCA,1,Room202,Programming
+Tuesday,03:00-04:00,BCA,1,Room201,Programming
+Wednesday,09:00-10:00,BCA,1,Lab2,DBMS
+Wednesday,10:00-11:00,BCA,1,Lab1,Web Development
+Wednesday,11:15-12:15,BCA,1,Lab3,Programming
+Wednesday,12:15-01:15,BCA,1,Room201,DBMS
+Wednesday,02:00-03:00,BCA,1,Lab3,Operating Systems
+Wednesday,03:00-04:00,BCA,1,Lab3,DBMS
+Thursday,09:00-10:00,BCA,1,Lab1,Data Structures
+Thursday,10:00-11:00,BCA,1,Room202,Data Structures
+Thursday,11:15-12:15,BCA,1,Lab1,Programming
+Thursday,12:15-01:15,BCA,1,Lab3,Data Structures
+Thursday,02:00-03:00,BCA,1,Room102,Operating Systems
+Thursday,03:00-04:00,BCA,1,Lab3,DBMS
+Friday,09:00-10:00,BCA,1,SeminarHall,Data Structures
+Friday,10:00-11:00,BCA,1,Room101,Operating Systems
+Friday,11:15-12:15,BCA,1,Room102,Operating Systems
+Friday,12:15-01:15,BCA,1,Room201,Web Development
+Friday,02:00-03:00,BCA,1,Room201,Operating Systems
+Friday,03:00-04:00,BCA,1,Lab2,Operating Systems
+Monday,09:00-10:00,BCA,2,Room102,Programming
+Monday,10:00-11:00,BCA,2,Lab1,Operating Systems
+Monday,11:15-12:15,BCA,2,Room101,DBMS
+Monday,12:15-01:15,BCA,2,Lab2,Web Development
+Monday,02:00-03:00,BCA,2,Room102,DBMS
+Monday,03:00-04:00,BCA,2,Lab3,Data Structures
+Tuesday,09:00-10:00,BCA,2,Room202,Web Development
+Tuesday,10:00-11:00,BCA,2,SeminarHall,Web Development
+Tuesday,11:15-12:15,BCA,2,Room101,Operating Systems
+Tuesday,12:15-01:15,BCA,2,Room202,Web Development
+Tuesday,02:00-03:00,BCA,2,Lab1,Web Development
+Tuesday,03:00-04:00,BCA,2,Room202,Operating Systems
+Wednesday,09:00-10:00,BCA,2,Lab2,Operating Systems
+Wednesday,10:00-11:00,BCA,2,Room102,Web Development
+Wednesday,11:15-12:15,BCA,2,Lab1,Web Development
+Wednesday,12:15-01:15,BCA,2,Room201,Data Structures
+Wednesday,02:00-03:00,BCA,2,Lab2,Operating Systems
+Wednesday,03:00-04:00,BCA,2,Room201,Web Development
+Thursday,09:00-10:00,BCA,2,Lab1,Data Structures
+Thursday,10:00-11:00,BCA,2,Room101,Web Development
+Thursday,11:15-12:15,BCA,2,SeminarHall,Operating Systems
+Thursday,12:15-01:15,BCA,2,SeminarHall,Programming
+Thursday,02:00-03:00,BCA,2,Lab1,Web Development
+Thursday,03:00-04:00,BCA,2,Room101,DBMS
+Friday,09:00-10:00,BCA,2,Room202,Programming
+Friday,10:00-11:00,BCA,2,SeminarHall,Data Structures
+Friday,11:15-12:15,BCA,2,Room201,Operating Systems
+Friday,12:15-01:15,BCA,2,Room202,Web Development
+Friday,02:00-03:00,BCA,2,Lab2,Data Structures
+Friday,03:00-04:00,BCA,2,SeminarHall,Web Development
+Monday,09:00-10:00,BCA,3,Lab2,Web Development
+Monday,10:00-11:00,BCA,3,Room102,Programming
+Monday,11:15-12:15,BCA,3,Room101,DBMS
+Monday,12:15-01:15,BCA,3,Room101,Data Structures
+Monday,02:00-03:00,BCA,3,Room102,Web Development
+Monday,03:00-04:00,BCA,3,Room202,DBMS
+Tuesday,09:00-10:00,BCA,3,Lab1,Web Development
+Tuesday,10:00-11:00,BCA,3,Room201,DBMS
+Tuesday,11:15-12:15,BCA,3,SeminarHall,Data Structures
+Tuesday,12:15-01:15,BCA,3,Room101,Web Development
+Tuesday,02:00-03:00,BCA,3,Room102,Data Structures
+Tuesday,03:00-04:00,BCA,3,Room101,Data Structures
+Wednesday,09:00-10:00,BCA,3,Lab3,Web Development
+Wednesday,10:00-11:00,BCA,3,Room202,Operating Systems
+Wednesday,11:15-12:15,BCA,3,Lab3,Operating Systems
+Wednesday,12:15-01:15,BCA,3,Room201,DBMS
+Wednesday,02:00-03:00,BCA,3,Lab3,Data Structures
+Wednesday,03:00-04:00,BCA,3,Lab1,Web Development
+Thursday,09:00-10:00,BCA,3,Lab2,DBMS
+Thursday,10:00-11:00,BCA,3,Room202,Operating Systems
+Thursday,11:15-12:15,BCA,3,Lab1,Data Structures
+Thursday,12:15-01:15,BCA,3,Room102,Web Development
+Thursday,02:00-03:00,BCA,3,Room102,DBMS
+Thursday,03:00-04:00,BCA,3,Lab1,Operating Systems
+Friday,09:00-10:00,BCA,3,Room201,Data Structures
+Friday,10:00-11:00,BCA,3,Room202,Operating Systems
+Friday,11:15-12:15,BCA,3,Room101,Web Development
+Friday,12:15-01:15,BCA,3,Room102,Operating Systems
+Friday,02:00-03:00,BCA,3,SeminarHall,DBMS
+Friday,03:00-04:00,BCA,3,Room101,Data Structures
+Monday,09:00-10:00,BBA,1,Room201,Finance
+Monday,10:00-11:00,BBA,1,SeminarHall,Finance
+Monday,11:15-12:15,BBA,1,Room102,Marketing
+Monday,12:15-01:15,BBA,1,Lab1,Economics
+Monday,02:00-03:00,BBA,1,Lab3,Marketing
+Monday,03:00-04:00,BBA,1,Room202,Finance
+Tuesday,09:00-10:00,BBA,1,Room201,Business Analytics
+Tuesday,10:00-11:00,BBA,1,Room202,Marketing
+Tuesday,11:15-12:15,BBA,1,Lab2,HRM
+Tuesday,12:15-01:15,BBA,1,Room201,Economics
+Tuesday,02:00-03:00,BBA,1,Room201,Business Analytics
+Tuesday,03:00-04:00,BBA,1,Room202,Economics
+Wednesday,09:00-10:00,BBA,1,Lab3,Finance
+Wednesday,10:00-11:00,BBA,1,SeminarHall,HRM
+Wednesday,11:15-12:15,BBA,1,Room201,Finance
+Wednesday,12:15-01:15,BBA,1,SeminarHall,HRM
+Wednesday,02:00-03:00,BBA,1,Lab1,Marketing
+Wednesday,03:00-04:00,BBA,1,Lab2,Marketing
+Thursday,09:00-10:00,BBA,1,Lab3,Marketing
+Thursday,10:00-11:00,BBA,1,Room101,Finance
+Thursday,11:15-12:15,BBA,1,SeminarHall,Business Analytics
+Thursday,12:15-01:15,BBA,1,Room201,HRM
+Thursday,02:00-03:00,BBA,1,Lab2,Finance
+Thursday,03:00-04:00,BBA,1,Room202,Economics
+Friday,09:00-10:00,BBA,1,Room201,Economics
+Friday,10:00-11:00,BBA,1,Lab1,Finance
+Friday,11:15-12:15,BBA,1,Room202,Finance
+Friday,12:15-01:15,BBA,1,Room201,Finance
+Friday,02:00-03:00,BBA,1,Room101,Finance
+Friday,03:00-04:00,BBA,1,Lab3,Business Analytics
+Monday,09:00-10:00,BBA,2,Lab2,Economics
+Monday,10:00-11:00,BBA,2,Lab3,HRM
+Monday,11:15-12:15,BBA,2,Lab1,Economics
+Monday,12:15-01:15,BBA,2,Room102,Marketing
+Monday,02:00-03:00,BBA,2,Lab1,HRM
+Monday,03:00-04:00,BBA,2,Room201,HRM
+Tuesday,09:00-10:00,BBA,2,Room201,Economics
+Tuesday,10:00-11:00,BBA,2,Lab2,Finance
+Tuesday,11:15-12:15,BBA,2,Lab3,HRM
+Tuesday,12:15-01:15,BBA,2,Room101,Marketing
+Tuesday,02:00-03:00,BBA,2,Lab2,Business Analytics
+Tuesday,03:00-04:00,BBA,2,Lab2,Finance
+Wednesday,09:00-10:00,BBA,2,Lab3,Marketing
+Wednesday,10:00-11:00,BBA,2,Lab3,Finance
+Wednesday,11:15-12:15,BBA,2,Room102,Economics
+Wednesday,12:15-01:15,BBA,2,Lab2,Economics
+Wednesday,02:00-03:00,BBA,2,Room201,Business Analytics
+Wednesday,03:00-04:00,BBA,2,Room202,Finance
+Thursday,09:00-10:00,BBA,2,SeminarHall,Finance
+Thursday,10:00-11:00,BBA,2,Lab1,Economics
+Thursday,11:15-12:15,BBA,2,Lab1,HRM
+Thursday,12:15-01:15,BBA,2,Room101,Marketing
+Thursday,02:00-03:00,BBA,2,Room201,HRM
+Thursday,03:00-04:00,BBA,2,Lab2,Business Analytics
+Friday,09:00-10:00,BBA,2,Room102,Marketing
+Friday,10:00-11:00,BBA,2,Room101,Business Analytics
+Friday,11:15-12:15,BBA,2,Room101,Business Analytics
+Friday,12:15-01:15,BBA,2,Room102,Finance
+Friday,02:00-03:00,BBA,2,Room102,Business Analytics
+Friday,03:00-04:00,BBA,2,Room101,HRM
+Monday,09:00-10:00,BBA,3,Lab3,Marketing
+Monday,10:00-11:00,BBA,3,Room102,HRM
+Monday,11:15-12:15,BBA,3,Lab1,HRM
+Monday,12:15-01:15,BBA,3,Room202,Finance
+Monday,02:00-03:00,BBA,3,Lab2,Economics
+Monday,03:00-04:00,BBA,3,Room102,HRM
+Tuesday,09:00-10:00,BBA,3,Lab3,Business Analytics
+Tuesday,10:00-11:00,BBA,3,SeminarHall,Economics
+Tuesday,11:15-12:15,BBA,3,Room101,Business Analytics
+Tuesday,12:15-01:15,BBA,3,Room202,Marketing
+Tuesday,02:00-03:00,BBA,3,Room202,Finance
+Tuesday,03:00-04:00,BBA,3,Lab1,Business Analytics
+Wednesday,09:00-10:00,BBA,3,SeminarHall,Business Analytics
+Wednesday,10:00-11:00,BBA,3,Room102,Business Analytics
+Wednesday,11:15-12:15,BBA,3,Room101,Finance
+Wednesday,12:15-01:15,BBA,3,Room102,HRM
+Wednesday,02:00-03:00,BBA,3,Room102,Finance
+Wednesday,03:00-04:00,BBA,3,Lab3,Marketing
+Thursday,09:00-10:00,BBA,3,Room202,Marketing
+Thursday,10:00-11:00,BBA,3,Room101,Economics
+Thursday,11:15-12:15,BBA,3,Lab1,Finance
+Thursday,12:15-01:15,BBA,3,Room101,Economics
+Thursday,02:00-03:00,BBA,3,Lab3,HRM
+Thursday,03:00-04:00,BBA,3,Lab3,Finance
+Friday,09:00-10:00,BBA,3,Lab2,Marketing
+Friday,10:00-11:00,BBA,3,Room101,Marketing
+Friday,11:15-12:15,BBA,3,Lab3,Business Analytics
+Friday,12:15-01:15,BBA,3,SeminarHall,Marketing
+Friday,02:00-03:00,BBA,3,Room102,Business Analytics
+Friday,03:00-04:00,BBA,3,SeminarHall,Business Analytics
+Monday,09:00-10:00,BCom,1,SeminarHall,Accounting
+Monday,10:00-11:00,BCom,1,Lab2,Economics
+Monday,11:15-12:15,BCom,1,Room202,Economics
+Monday,12:15-01:15,BCom,1,Lab3,Business Law
+Monday,02:00-03:00,BCom,1,Room101,Taxation
+Monday,03:00-04:00,BCom,1,Room102,Business Law
+Tuesday,09:00-10:00,BCom,1,SeminarHall,Taxation
+Tuesday,10:00-11:00,BCom,1,Room202,Auditing
+Tuesday,11:15-12:15,BCom,1,Room201,Business Law
+Tuesday,12:15-01:15,BCom,1,Room101,Taxation
+Tuesday,02:00-03:00,BCom,1,Lab3,Economics
+Tuesday,03:00-04:00,BCom,1,Lab2,Accounting
+Wednesday,09:00-10:00,BCom,1,SeminarHall,Accounting
+Wednesday,10:00-11:00,BCom,1,Lab1,Accounting
+Wednesday,11:15-12:15,BCom,1,Lab2,Business Law
+Wednesday,12:15-01:15,BCom,1,Lab1,Business Law
+Wednesday,02:00-03:00,BCom,1,Room102,Business Law
+Wednesday,03:00-04:00,BCom,1,SeminarHall,Accounting
+Thursday,09:00-10:00,BCom,1,Lab2,Economics
+Thursday,10:00-11:00,BCom,1,Room201,Auditing
+Thursday,11:15-12:15,BCom,1,SeminarHall,Accounting
+Thursday,12:15-01:15,BCom,1,Lab2,Economics
+Thursday,02:00-03:00,BCom,1,Lab2,Business Law
+Thursday,03:00-04:00,BCom,1,Room201,Auditing
+Friday,09:00-10:00,BCom,1,Lab3,Economics
+Friday,10:00-11:00,BCom,1,Room101,Accounting
+Friday,11:15-12:15,BCom,1,Lab2,Business Law
+Friday,12:15-01:15,BCom,1,Lab3,Economics
+Friday,02:00-03:00,BCom,1,Room202,Taxation
+Friday,03:00-04:00,BCom,1,Lab2,Taxation
+Monday,09:00-10:00,BCom,2,Room201,Accounting
+Monday,10:00-11:00,BCom,2,Lab2,Taxation
+Monday,11:15-12:15,BCom,2,Lab2,Business Law
+Monday,12:15-01:15,BCom,2,Room101,Business Law
+Monday,02:00-03:00,BCom,2,Lab2,Economics
+Monday,03:00-04:00,BCom,2,Room202,Accounting
+Tuesday,09:00-10:00,BCom,2,Lab2,Business Law
+Tuesday,10:00-11:00,BCom,2,Room201,Economics
+Tuesday,11:15-12:15,BCom,2,Room202,Auditing
+Tuesday,12:15-01:15,BCom,2,Lab1,Accounting
+Tuesday,02:00-03:00,BCom,2,Lab2,Accounting
+Tuesday,03:00-04:00,BCom,2,Room102,Taxation
+Wednesday,09:00-10:00,BCom,2,Lab3,Business Law
+Wednesday,10:00-11:00,BCom,2,Room201,Accounting
+Wednesday,11:15-12:15,BCom,2,Lab1,Taxation
+Wednesday,12:15-01:15,BCom,2,SeminarHall,Economics
+Wednesday,02:00-03:00,BCom,2,Lab2,Auditing
+Wednesday,03:00-04:00,BCom,2,Room201,Economics
+Thursday,09:00-10:00,BCom,2,Lab1,Economics
+Thursday,10:00-11:00,BCom,2,Room101,Taxation
+Thursday,11:15-12:15,BCom,2,Room102,Auditing
+Thursday,12:15-01:15,BCom,2,Room202,Taxation
+Thursday,02:00-03:00,BCom,2,Lab3,Auditing
+Thursday,03:00-04:00,BCom,2,Room101,Accounting
+Friday,09:00-10:00,BCom,2,Room101,Accounting
+Friday,10:00-11:00,BCom,2,Room101,Accounting
+Friday,11:15-12:15,BCom,2,Lab3,Accounting
+Friday,12:15-01:15,BCom,2,Lab2,Economics
+Friday,02:00-03:00,BCom,2,Room101,Auditing
+Friday,03:00-04:00,BCom,2,Room202,Business Law
+Monday,09:00-10:00,BCom,3,Lab3,Business Law
+Monday,10:00-11:00,BCom,3,Room102,Accounting
+Monday,11:15-12:15,BCom,3,Room102,Business Law
+Monday,12:15-01:15,BCom,3,Lab2,Auditing
+Monday,02:00-03:00,BCom,3,Lab1,Accounting
+Monday,03:00-04:00,BCom,3,Lab2,Auditing
+Tuesday,09:00-10:00,BCom,3,Lab1,Business Law
+Tuesday,10:00-11:00,BCom,3,Room202,Taxation
+Tuesday,11:15-12:15,BCom,3,Room202,Auditing
+Tuesday,12:15-01:15,BCom,3,Lab1,Accounting
+Tuesday,02:00-03:00,BCom,3,SeminarHall,Accounting
+Tuesday,03:00-04:00,BCom,3,Lab1,Auditing
+Wednesday,09:00-10:00,BCom,3,Lab1,Auditing
+Wednesday,10:00-11:00,BCom,3,Lab3,Business Law
+Wednesday,11:15-12:15,BCom,3,Lab1,Business Law
+Wednesday,12:15-01:15,BCom,3,Room201,Auditing
+Wednesday,02:00-03:00,BCom,3,Room101,Economics
+Wednesday,03:00-04:00,BCom,3,Lab2,Auditing
+Thursday,09:00-10:00,BCom,3,Room101,Business Law
+Thursday,10:00-11:00,BCom,3,Lab2,Taxation
+Thursday,11:15-12:15,BCom,3,Lab1,Economics
+Thursday,12:15-01:15,BCom,3,Lab1,Business Law
+Thursday,02:00-03:00,BCom,3,Room102,Economics
+Thursday,03:00-04:00,BCom,3,Lab3,Auditing
+Friday,09:00-10:00,BCom,3,Lab3,Auditing
+Friday,10:00-11:00,BCom,3,Lab1,Auditing
+Friday,11:15-12:15,BCom,3,Room102,Business Law
+Friday,12:15-01:15,BCom,3,Room102,Business Law
+Friday,02:00-03:00,BCom,3,Lab3,Accounting
+Friday,03:00-04:00,BCom,3,Lab1,Auditing
+Monday,09:00-10:00,BSc,1,Lab3,Statistics
+Monday,10:00-11:00,BSc,1,Lab2,Computer Science
+Monday,11:15-12:15,BSc,1,Room101,Chemistry
+Monday,12:15-01:15,BSc,1,Lab3,Statistics
+Monday,02:00-03:00,BSc,1,Room201,Statistics
+Monday,03:00-04:00,BSc,1,Room102,Physics
+Tuesday,09:00-10:00,BSc,1,SeminarHall,Physics
+Tuesday,10:00-11:00,BSc,1,Room102,Physics
+Tuesday,11:15-12:15,BSc,1,Lab3,Statistics
+Tuesday,12:15-01:15,BSc,1,Lab3,Statistics
+Tuesday,02:00-03:00,BSc,1,Room202,Mathematics
+Tuesday,03:00-04:00,BSc,1,Room102,Mathematics
+Wednesday,09:00-10:00,BSc,1,SeminarHall,Computer Science
+Wednesday,10:00-11:00,BSc,1,Lab2,Computer Science
+Wednesday,11:15-12:15,BSc,1,Lab3,Computer Science
+Wednesday,12:15-01:15,BSc,1,Room102,Chemistry
+Wednesday,02:00-03:00,BSc,1,Room101,Computer Science
+Wednesday,03:00-04:00,BSc,1,SeminarHall,Computer Science
+Thursday,09:00-10:00,BSc,1,Room202,Physics
+Thursday,10:00-11:00,BSc,1,Room102,Chemistry
+Thursday,11:15-12:15,BSc,1,Room101,Physics
+Thursday,12:15-01:15,BSc,1,Room201,Physics
+Thursday,02:00-03:00,BSc,1,Lab3,Mathematics
+Thursday,03:00-04:00,BSc,1,SeminarHall,Chemistry
+Friday,09:00-10:00,BSc,1,Lab3,Statistics
+Friday,10:00-11:00,BSc,1,Room202,Physics
+Friday,11:15-12:15,BSc,1,Room102,Physics
+Friday,12:15-01:15,BSc,1,Room101,Chemistry
+Friday,02:00-03:00,BSc,1,Room101,Physics
+Friday,03:00-04:00,BSc,1,Room201,Statistics
+Monday,09:00-10:00,BSc,2,Lab2,Mathematics
+Monday,10:00-11:00,BSc,2,Room102,Computer Science
+Monday,11:15-12:15,BSc,2,Room102,Mathematics
+Monday,12:15-01:15,BSc,2,Room102,Physics
+Monday,02:00-03:00,BSc,2,Room202,Physics
+Monday,03:00-04:00,BSc,2,Lab1,Computer Science
+Tuesday,09:00-10:00,BSc,2,Lab2,Computer Science
+Tuesday,10:00-11:00,BSc,2,Lab3,Mathematics
+Tuesday,11:15-12:15,BSc,2,Room101,Chemistry
+Tuesday,12:15-01:15,BSc,2,Room201,Mathematics
+Tuesday,02:00-03:00,BSc,2,Lab1,Physics
+Tuesday,03:00-04:00,BSc,2,SeminarHall,Computer Science
+Wednesday,09:00-10:00,BSc,2,Room101,Physics
+Wednesday,10:00-11:00,BSc,2,Lab3,Statistics
+Wednesday,11:15-12:15,BSc,2,SeminarHall,Computer Science
+Wednesday,12:15-01:15,BSc,2,SeminarHall,Chemistry
+Wednesday,02:00-03:00,BSc,2,Room102,Statistics
+Wednesday,03:00-04:00,BSc,2,Lab2,Mathematics
+Thursday,09:00-10:00,BSc,2,Room202,Statistics
+Thursday,10:00-11:00,BSc,2,Lab2,Mathematics
+Thursday,11:15-12:15,BSc,2,Room102,Computer Science
+Thursday,12:15-01:15,BSc,2,Lab3,Chemistry
+Thursday,02:00-03:00,BSc,2,Lab3,Chemistry
+Thursday,03:00-04:00,BSc,2,Room201,Chemistry
+Friday,09:00-10:00,BSc,2,Room202,Physics
+Friday,10:00-11:00,BSc,2,Room101,Computer Science
+Friday,11:15-12:15,BSc,2,Room101,Physics
+Friday,12:15-01:15,BSc,2,Room201,Statistics
+Friday,02:00-03:00,BSc,2,Lab2,Chemistry
+Friday,03:00-04:00,BSc,2,Lab2,Chemistry
+Monday,09:00-10:00,BSc,3,Lab1,Statistics
+Monday,10:00-11:00,BSc,3,Room202,Mathematics
+Monday,11:15-12:15,BSc,3,Room201,Mathematics
+Monday,12:15-01:15,BSc,3,Room101,Chemistry
+Monday,02:00-03:00,BSc,3,SeminarHall,Statistics
+Monday,03:00-04:00,BSc,3,Lab3,Physics
+Tuesday,09:00-10:00,BSc,3,Room202,Mathematics
+Tuesday,10:00-11:00,BSc,3,Room202,Computer Science
+Tuesday,11:15-12:15,BSc,3,Room201,Statistics
+Tuesday,12:15-01:15,BSc,3,Room201,Statistics
+Tuesday,02:00-03:00,BSc,3,SeminarHall,Physics
+Tuesday,03:00-04:00,BSc,3,Room101,Mathematics
+Wednesday,09:00-10:00,BSc,3,Room101,Computer Science
+Wednesday,10:00-11:00,BSc,3,SeminarHall,Chemistry
+Wednesday,11:15-12:15,BSc,3,Lab1,Mathematics
+Wednesday,12:15-01:15,BSc,3,Room102,Physics
+Wednesday,02:00-03:00,BSc,3,Room102,Statistics
+Wednesday,03:00-04:00,BSc,3,Lab3,Chemistry
+Thursday,09:00-10:00,BSc,3,Room101,Mathematics
+Thursday,10:00-11:00,BSc,3,Lab3,Chemistry
+Thursday,11:15-12:15,BSc,3,Lab3,Chemistry
+Thursday,12:15-01:15,BSc,3,Lab3,Mathematics
+Thursday,02:00-03:00,BSc,3,Lab2,Mathematics
+Thursday,03:00-04:00,BSc,3,Lab3,Chemistry
+Friday,09:00-10:00,BSc,3,SeminarHall,Chemistry
+Friday,10:00-11:00,BSc,3,Lab1,Computer Science
+Friday,11:15-12:15,BSc,3,Room201,Physics
+Friday,12:15-01:15,BSc,3,Room102,Computer Science
+Friday,02:00-03:00,BSc,3,Room101,Physics
+Friday,03:00-04:00,BSc,3,Room101,Statistics
+Monday,09:00-10:00,BA,1,Room201,Sociology
+Monday,10:00-11:00,BA,1,Room201,Economics
+Monday,11:15-12:15,BA,1,Room202,Sociology
+Monday,12:15-01:15,BA,1,Room102,English
+Monday,02:00-03:00,BA,1,Lab3,English
+Monday,03:00-04:00,BA,1,Lab2,Economics
+Tuesday,09:00-10:00,BA,1,Room201,History
+Tuesday,10:00-11:00,BA,1,Room101,History
+Tuesday,11:15-12:15,BA,1,Room202,Political Science
+Tuesday,12:15-01:15,BA,1,SeminarHall,Political Science
+Tuesday,02:00-03:00,BA,1,Lab3,Political Science
+Tuesday,03:00-04:00,BA,1,SeminarHall,Sociology
+Wednesday,09:00-10:00,BA,1,Lab2,Economics
+Wednesday,10:00-11:00,BA,1,Room102,Economics
+Wednesday,11:15-12:15,BA,1,Lab3,English
+Wednesday,12:15-01:15,BA,1,Room202,Political Science
+Wednesday,02:00-03:00,BA,1,Room202,Political Science
+Wednesday,03:00-04:00,BA,1,Room102,English
+Thursday,09:00-10:00,BA,1,Room201,English
+Thursday,10:00-11:00,BA,1,SeminarHall,Sociology
+Thursday,11:15-12:15,BA,1,Room102,Economics
+Thursday,12:15-01:15,BA,1,Room201,Economics
+Thursday,02:00-03:00,BA,1,Lab1,Political Science
+Thursday,03:00-04:00,BA,1,Room201,Sociology
+Friday,09:00-10:00,BA,1,Lab2,History
+Friday,10:00-11:00,BA,1,SeminarHall,Economics
+Friday,11:15-12:15,BA,1,Room102,Political Science
+Friday,12:15-01:15,BA,1,SeminarHall,English
+Friday,02:00-03:00,BA,1,Lab3,Sociology
+Friday,03:00-04:00,BA,1,Room102,Sociology
+Monday,09:00-10:00,BA,2,Lab1,Economics
+Monday,10:00-11:00,BA,2,SeminarHall,Political Science
+Monday,11:15-12:15,BA,2,Lab3,English
+Monday,12:15-01:15,BA,2,Lab2,Political Science
+Monday,02:00-03:00,BA,2,Room202,History
+Monday,03:00-04:00,BA,2,SeminarHall,Economics
+Tuesday,09:00-10:00,BA,2,Room201,English
+Tuesday,10:00-11:00,BA,2,Lab2,Economics
+Tuesday,11:15-12:15,BA,2,Room202,Political Science
+Tuesday,12:15-01:15,BA,2,SeminarHall,Sociology
+Tuesday,02:00-03:00,BA,2,SeminarHall,Sociology
+Tuesday,03:00-04:00,BA,2,Lab3,Political Science
+Wednesday,09:00-10:00,BA,2,Room102,History
+Wednesday,10:00-11:00,BA,2,Room102,Political Science
+Wednesday,11:15-12:15,BA,2,Lab1,History
+Wednesday,12:15-01:15,BA,2,Lab2,Economics
+Wednesday,02:00-03:00,BA,2,Room201,Political Science
+Wednesday,03:00-04:00,BA,2,Room201,Sociology
+Thursday,09:00-10:00,BA,2,SeminarHall,History
+Thursday,10:00-11:00,BA,2,Room202,Political Science
+Thursday,11:15-12:15,BA,2,Lab2,Sociology
+Thursday,12:15-01:15,BA,2,Lab2,English
+Thursday,02:00-03:00,BA,2,Room101,Economics
+Thursday,03:00-04:00,BA,2,Room101,History
+Friday,09:00-10:00,BA,2,Room202,Political Science
+Friday,10:00-11:00,BA,2,Room201,Political Science
+Friday,11:15-12:15,BA,2,Lab1,Political Science
+Friday,12:15-01:15,BA,2,Lab2,History
+Friday,02:00-03:00,BA,2,Room101,Sociology
+Friday,03:00-04:00,BA,2,Lab1,Economics
+Monday,09:00-10:00,BA,3,Room101,Economics
+Monday,10:00-11:00,BA,3,Lab1,Political Science
+Monday,11:15-12:15,BA,3,Room102,English
+Monday,12:15-01:15,BA,3,Room201,Political Science
+Monday,02:00-03:00,BA,3,Room102,English
+Monday,03:00-04:00,BA,3,SeminarHall,Economics
+Tuesday,09:00-10:00,BA,3,Lab1,English
+Tuesday,10:00-11:00,BA,3,Room201,English
+Tuesday,11:15-12:15,BA,3,Room102,Political Science
+Tuesday,12:15-01:15,BA,3,Lab3,Political Science
+Tuesday,02:00-03:00,BA,3,Room102,History
+Tuesday,03:00-04:00,BA,3,Room202,Economics
+Wednesday,09:00-10:00,BA,3,Room101,English
+Wednesday,10:00-11:00,BA,3,Room202,Political Science
+Wednesday,11:15-12:15,BA,3,Room201,English
+Wednesday,12:15-01:15,BA,3,Room201,History
+Wednesday,02:00-03:00,BA,3,Room101,English
+Wednesday,03:00-04:00,BA,3,Lab2,Economics
+Thursday,09:00-10:00,BA,3,Lab3,History
+Thursday,10:00-11:00,BA,3,SeminarHall,Economics
+Thursday,11:15-12:15,BA,3,Lab1,Political Science
+Thursday,12:15-01:15,BA,3,Room202,Economics
+Thursday,02:00-03:00,BA,3,Room201,History
+Thursday,03:00-04:00,BA,3,SeminarHall,English
+Friday,09:00-10:00,BA,3,SeminarHall,History
+Friday,10:00-11:00,BA,3,Lab3,Sociology
+Friday,11:15-12:15,BA,3,Room201,Sociology
+Friday,12:15-01:15,BA,3,Room101,Economics
+Friday,02:00-03:00,BA,3,Lab2,History
+Friday,03:00-04:00,BA,3,SeminarHall,Political Science
+Monday,09:00-10:00,MCA,1,Room201,Big Data
+Monday,10:00-11:00,MCA,1,Lab2,Big Data
+Monday,11:15-12:15,MCA,1,Room101,Cloud Computing
+Monday,12:15-01:15,MCA,1,Lab2,AI
+Monday,02:00-03:00,MCA,1,Lab1,Advanced Java
+Monday,03:00-04:00,MCA,1,SeminarHall,Machine Learning
+Tuesday,09:00-10:00,MCA,1,Lab1,Advanced Java
+Tuesday,10:00-11:00,MCA,1,Lab2,AI
+Tuesday,11:15-12:15,MCA,1,Lab2,Machine Learning
+Tuesday,12:15-01:15,MCA,1,Room101,AI
+Tuesday,02:00-03:00,MCA,1,Room102,Cloud Computing
+Tuesday,03:00-04:00,MCA,1,Room201,Big Data
+Wednesday,09:00-10:00,MCA,1,Room202,Machine Learning
+Wednesday,10:00-11:00,MCA,1,SeminarHall,Cloud Computing
+Wednesday,11:15-12:15,MCA,1,Lab2,Big Data
+Wednesday,12:15-01:15,MCA,1,Room202,Big Data
+Wednesday,02:00-03:00,MCA,1,SeminarHall,Big Data
+Wednesday,03:00-04:00,MCA,1,Lab2,Machine Learning
+Thursday,09:00-10:00,MCA,1,Lab2,Advanced Java
+Thursday,10:00-11:00,MCA,1,Room201,AI
+Thursday,11:15-12:15,MCA,1,Room201,Cloud Computing
+Thursday,12:15-01:15,MCA,1,SeminarHall,Cloud Computing
+Thursday,02:00-03:00,MCA,1,Room102,Advanced Java
+Thursday,03:00-04:00,MCA,1,Lab3,Machine Learning
+Friday,09:00-10:00,MCA,1,Room102,Big Data
+Friday,10:00-11:00,MCA,1,Room101,Machine Learning
+Friday,11:15-12:15,MCA,1,SeminarHall,Big Data
+Friday,12:15-01:15,MCA,1,SeminarHall,Advanced Java
+Friday,02:00-03:00,MCA,1,Room102,Machine Learning
+Friday,03:00-04:00,MCA,1,SeminarHall,Machine Learning
+Monday,09:00-10:00,MCA,2,Lab3,Big Data
+Monday,10:00-11:00,MCA,2,Room201,Big Data
+Monday,11:15-12:15,MCA,2,Room202,Machine Learning
+Monday,12:15-01:15,MCA,2,Lab1,Cloud Computing
+Monday,02:00-03:00,MCA,2,SeminarHall,Big Data
+Monday,03:00-04:00,MCA,2,Lab1,AI
+Tuesday,09:00-10:00,MCA,2,SeminarHall,Big Data
+Tuesday,10:00-11:00,MCA,2,SeminarHall,Machine Learning
+Tuesday,11:15-12:15,MCA,2,Room101,AI
+Tuesday,12:15-01:15,MCA,2,Room101,Advanced Java
+Tuesday,02:00-03:00,MCA,2,Room101,Machine Learning
+Tuesday,03:00-04:00,MCA,2,Room102,Cloud Computing
+Wednesday,09:00-10:00,MCA,2,Room101,Cloud Computing
+Wednesday,10:00-11:00,MCA,2,Lab3,Cloud Computing
+Wednesday,11:15-12:15,MCA,2,SeminarHall,Machine Learning
+Wednesday,12:15-01:15,MCA,2,Room102,Big Data
+Wednesday,02:00-03:00,MCA,2,SeminarHall,Advanced Java
+Wednesday,03:00-04:00,MCA,2,Lab2,AI
+Thursday,09:00-10:00,MCA,2,Room201,Big Data
+Thursday,10:00-11:00,MCA,2,Room102,Cloud Computing
+Thursday,11:15-12:15,MCA,2,Room202,Cloud Computing
+Thursday,12:15-01:15,MCA,2,Lab2,Advanced Java
+Thursday,02:00-03:00,MCA,2,Room102,Cloud Computing
+Thursday,03:00-04:00,MCA,2,Room201,Advanced Java
+Friday,09:00-10:00,MCA,2,Lab1,AI
+Friday,10:00-11:00,MCA,2,Room201,Big Data
+Friday,11:15-12:15,MCA,2,SeminarHall,Advanced Java
+Friday,12:15-01:15,MCA,2,Lab3,Advanced Java
+Friday,02:00-03:00,MCA,2,Lab3,AI
+Friday,03:00-04:00,MCA,2,Lab2,AI
+Monday,09:00-10:00,MBA,1,Room101,Operations
+Monday,10:00-11:00,MBA,1,Lab3,Strategic Management
+Monday,11:15-12:15,MBA,1,SeminarHall,Operations
+Monday,12:15-01:15,MBA,1,SeminarHall,Corporate Finance
+Monday,02:00-03:00,MBA,1,Room201,Operations
+Monday,03:00-04:00,MBA,1,Room202,Marketing Analytics
+Tuesday,09:00-10:00,MBA,1,Room102,Strategic Management
+Tuesday,10:00-11:00,MBA,1,Room201,Operations
+Tuesday,11:15-12:15,MBA,1,Room101,Marketing Analytics
+Tuesday,12:15-01:15,MBA,1,Lab2,Marketing Analytics
+Tuesday,02:00-03:00,MBA,1,Lab2,Operations
+Tuesday,03:00-04:00,MBA,1,Lab2,Corporate Finance
+Wednesday,09:00-10:00,MBA,1,Room102,Leadership
+Wednesday,10:00-11:00,MBA,1,SeminarHall,Corporate Finance
+Wednesday,11:15-12:15,MBA,1,Lab1,Operations
+Wednesday,12:15-01:15,MBA,1,Room202,Corporate Finance
+Wednesday,02:00-03:00,MBA,1,Room101,Leadership
+Wednesday,03:00-04:00,MBA,1,Room201,Leadership
+Thursday,09:00-10:00,MBA,1,Room101,Corporate Finance
+Thursday,10:00-11:00,MBA,1,Room102,Corporate Finance
+Thursday,11:15-12:15,MBA,1,SeminarHall,Operations
+Thursday,12:15-01:15,MBA,1,Room202,Strategic Management
+Thursday,02:00-03:00,MBA,1,Room101,Strategic Management
+Thursday,03:00-04:00,MBA,1,Room201,Marketing Analytics
+Friday,09:00-10:00,MBA,1,Room101,Marketing Analytics
+Friday,10:00-11:00,MBA,1,Room102,Operations
+Friday,11:15-12:15,MBA,1,Room102,Strategic Management
+Friday,12:15-01:15,MBA,1,Room101,Strategic Management
+Friday,02:00-03:00,MBA,1,Room102,Corporate Finance
+Friday,03:00-04:00,MBA,1,Room202,Leadership
+Monday,09:00-10:00,MBA,2,SeminarHall,Operations
+Monday,10:00-11:00,MBA,2,Room102,Marketing Analytics
+Monday,11:15-12:15,MBA,2,Room102,Corporate Finance
+Monday,12:15-01:15,MBA,2,Room201,Marketing Analytics
+Monday,02:00-03:00,MBA,2,Room102,Corporate Finance
+Monday,03:00-04:00,MBA,2,Lab1,Strategic Management
+Tuesday,09:00-10:00,MBA,2,Room201,Leadership
+Tuesday,10:00-11:00,MBA,2,Lab3,Marketing Analytics
+Tuesday,11:15-12:15,MBA,2,Room201,Strategic Management
+Tuesday,12:15-01:15,MBA,2,Room101,Leadership
+Tuesday,02:00-03:00,MBA,2,Room201,Marketing Analytics
+Tuesday,03:00-04:00,MBA,2,Room101,Marketing Analytics
+Wednesday,09:00-10:00,MBA,2,Room202,Corporate Finance
+Wednesday,10:00-11:00,MBA,2,Room202,Operations
+Wednesday,11:15-12:15,MBA,2,Lab3,Marketing Analytics
+Wednesday,12:15-01:15,MBA,2,Room202,Leadership
+Wednesday,02:00-03:00,MBA,2,Room102,Marketing Analytics
+Wednesday,03:00-04:00,MBA,2,SeminarHall,Operations
+Thursday,09:00-10:00,MBA,2,Room102,Corporate Finance
+Thursday,10:00-11:00,MBA,2,Room101,Corporate Finance
+Thursday,11:15-12:15,MBA,2,Room101,Operations
+Thursday,12:15-01:15,MBA,2,Lab2,Corporate Finance
+Thursday,02:00-03:00,MBA,2,Room202,Strategic Management
+Thursday,03:00-04:00,MBA,2,Room202,Leadership
+Friday,09:00-10:00,MBA,2,Room102,Operations
+Friday,10:00-11:00,MBA,2,Lab1,Leadership
+Friday,11:15-12:15,MBA,2,Room102,Marketing Analytics
+Friday,12:15-01:15,MBA,2,Room202,Strategic Management
+Friday,02:00-03:00,MBA,2,Lab2,Corporate Finance
+Friday,03:00-04:00,MBA,2,Room202,Corporate Finance
+Monday,09:00-10:00,MSc,1,Lab1,Advanced Statistics
+Monday,10:00-11:00,MSc,1,Lab1,Advanced Statistics
+Monday,11:15-12:15,MSc,1,SeminarHall,Deep Learning
+Monday,12:15-01:15,MSc,1,SeminarHall,Advanced Statistics
+Monday,02:00-03:00,MSc,1,Room202,Data Science
+Monday,03:00-04:00,MSc,1,Room201,Research Methods
+Tuesday,09:00-10:00,MSc,1,SeminarHall,AI
+Tuesday,10:00-11:00,MSc,1,SeminarHall,Advanced Statistics
+Tuesday,11:15-12:15,MSc,1,Lab2,Research Methods
+Tuesday,12:15-01:15,MSc,1,Room201,Advanced Statistics
+Tuesday,02:00-03:00,MSc,1,SeminarHall,Research Methods
+Tuesday,03:00-04:00,MSc,1,Lab2,Data Science
+Wednesday,09:00-10:00,MSc,1,SeminarHall,AI
+Wednesday,10:00-11:00,MSc,1,Room101,AI
+Wednesday,11:15-12:15,MSc,1,SeminarHall,Data Science
+Wednesday,12:15-01:15,MSc,1,Room101,Deep Learning
+Wednesday,02:00-03:00,MSc,1,Room202,AI
+Wednesday,03:00-04:00,MSc,1,SeminarHall,Data Science
+Thursday,09:00-10:00,MSc,1,Room202,Research Methods
+Thursday,10:00-11:00,MSc,1,Room201,Research Methods
+Thursday,11:15-12:15,MSc,1,Lab2,AI
+Thursday,12:15-01:15,MSc,1,Room202,Research Methods
+Thursday,02:00-03:00,MSc,1,Room102,Research Methods
+Thursday,03:00-04:00,MSc,1,Room202,Research Methods
+Friday,09:00-10:00,MSc,1,Lab2,Advanced Statistics
+Friday,10:00-11:00,MSc,1,Lab2,Advanced Statistics
+Friday,11:15-12:15,MSc,1,SeminarHall,Advanced Statistics
+Friday,12:15-01:15,MSc,1,Room202,Research Methods
+Friday,02:00-03:00,MSc,1,Lab3,Data Science
+Friday,03:00-04:00,MSc,1,Lab1,AI
+Monday,09:00-10:00,MSc,2,Lab3,AI
+Monday,10:00-11:00,MSc,2,SeminarHall,Deep Learning
+Monday,11:15-12:15,MSc,2,Room201,AI
+Monday,12:15-01:15,MSc,2,Room201,Data Science
+Monday,02:00-03:00,MSc,2,Lab2,AI
+Monday,03:00-04:00,MSc,2,Room202,Advanced Statistics
+Tuesday,09:00-10:00,MSc,2,Room201,Advanced Statistics
+Tuesday,10:00-11:00,MSc,2,Room202,Advanced Statistics
+Tuesday,11:15-12:15,MSc,2,Lab3,AI
+Tuesday,12:15-01:15,MSc,2,Room202,Data Science
+Tuesday,02:00-03:00,MSc,2,SeminarHall,Advanced Statistics
+Tuesday,03:00-04:00,MSc,2,Lab2,Deep Learning
+Wednesday,09:00-10:00,MSc,2,Lab2,Research Methods
+Wednesday,10:00-11:00,MSc,2,Lab2,Research Methods
+Wednesday,11:15-12:15,MSc,2,Room201,Research Methods
+Wednesday,12:15-01:15,MSc,2,Room101,Deep Learning
+Wednesday,02:00-03:00,MSc,2,Lab1,AI
+Wednesday,03:00-04:00,MSc,2,Lab3,Advanced Statistics
+Thursday,09:00-10:00,MSc,2,SeminarHall,Data Science
+Thursday,10:00-11:00,MSc,2,SeminarHall,Research Methods
+Thursday,11:15-12:15,MSc,2,Lab3,Data Science
+Thursday,12:15-01:15,MSc,2,Room201,Advanced Statistics
+Thursday,02:00-03:00,MSc,2,SeminarHall,Deep Learning
+Thursday,03:00-04:00,MSc,2,Room102,Deep Learning
+Friday,09:00-10:00,MSc,2,Lab3,Advanced Statistics
+Friday,10:00-11:00,MSc,2,SeminarHall,Advanced Statistics
+Friday,11:15-12:15,MSc,2,Room102,Deep Learning
+Friday,12:15-01:15,MSc,2,SeminarHall,Research Methods
+Friday,02:00-03:00,MSc,2,Room101,Research Methods
+Friday,03:00-04:00,MSc,2,Room201,Advanced Statistics

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Energy Optimization System</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 1. LEFT SIDEBAR -->
+        <aside class="sidebar glass">
+            <div class="sidebar-header">
+                <span class="material-symbols-rounded logo-icon">eco</span>
+                <h2>SmartCampus</h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="nav-link active">
+                    <span class="material-symbols-rounded">dashboard</span>
+                    Dashboard
+                </a>
+                <a href="#forecast" class="nav-link">
+                    <span class="material-symbols-rounded">monitoring</span>
+                    Energy Forecast
+                </a>
+                <a href="#schedule" class="nav-link">
+                    <span class="material-symbols-rounded">schedule</span>
+                    Power Schedule
+                </a>
+                <a href="#rooms" class="nav-link">
+                    <span class="material-symbols-rounded">meeting_room</span>
+                    Room Monitor
+                </a>
+                <a href="#gamification" class="nav-link">
+                    <span class="material-symbols-rounded">emoji_events</span>
+                    Gamification
+                </a>
+                <a href="#carbon" class="nav-link">
+                    <span class="material-symbols-rounded">co2</span>
+                    Carbon Impact
+                </a>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            <!-- 2. TOP HEADER -->
+            <header class="top-header glass">
+                <div class="header-left">
+                    <div class="status-indicator">
+                        <span class="status-dot optimal"></span>
+                        <span class="status-text">System Optimized</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div class="current-usage">
+                        <span class="material-symbols-rounded">bolt</span>
+                        <span>Current Usage: <strong>4.2 MW</strong></span>
+                    </div>
+                    
+                    <button id="theme-toggle" class="icon-btn glass-btn" aria-label="Toggle Dark Mode">
+                        <span class="material-symbols-rounded dark-icon">dark_mode</span>
+                        <span class="material-symbols-rounded light-icon" style="display: none;">light_mode</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- VIEW CONTAINERS -->
+            <!-- Dashboard View -->
+            <div id="view-dashboard" class="dashboard-content view-section active">
+                <h1 class="page-title">Dashboard Overview</h1>
+                
+                <!-- FEATURE 1: Live Energy Dashboard -->
+                <section class="feature-section" id="live-dashboard">
+                    <h2 class="section-title">Live Overview</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card glass">
+                            <span class="material-symbols-rounded stat-icon" style="color: var(--warning);">electric_bolt</span>
+                            <div class="stat-info">
+                                <h3>Total Usage Today</h3>
+                                <p class="stat-value"><span class="counter" data-metric="usage">0</span> kWh</p>
+                            </div>
+                        </div>
+                        <div class="stat-card glass">
+                            <span class="material-symbols-rounded stat-icon" style="color: var(--success);">energy_savings_leaf</span>
+                            <div class="stat-info">
+                                <h3>Energy Saved Today</h3>
+                                <p class="stat-value"><span class="counter" data-metric="saved">0</span> kWh</p>
+                            </div>
+                        </div>
+                        <div class="stat-card glass">
+                            <span class="material-symbols-rounded stat-icon" style="color: var(--primary);">co2</span>
+                            <div class="stat-info">
+                                <h3>Carbon Reduction</h3>
+                                <p class="stat-value"><span class="counter" data-metric="carbon">0</span> kg</p>
+                            </div>
+                        </div>
+                        <div class="stat-card glass">
+                            <span class="material-symbols-rounded stat-icon" style="color: var(--danger);">meeting_room</span>
+                            <div class="stat-info">
+                                <h3>Active Rooms</h3>
+                                <p class="stat-value"><span class="counter" data-metric="active">0</span></p>
+                            </div>
+                        </div>
+                        <div class="stat-card glass">
+                            <span class="material-symbols-rounded stat-icon" style="color: var(--text-secondary);">weekend</span>
+                            <div class="stat-info">
+                                <h3>Idle Rooms</h3>
+                                <p class="stat-value"><span class="counter" data-metric="idle">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="dashboard-grid-2col">
+                    <!-- FEATURE 2: Energy Forecast Chart -->
+                    <section class="feature-section glass card-padding" id="forecast-section">
+                        <div class="section-header">
+                            <h2 class="section-title">Energy Forecast (24h)</h2>
+                            <select id="building-select" class="glass-select">
+                                <option value="all">All Buildings</option>
+                                <option value="engineering">Engineering Block</option>
+                                <option value="science">Science Center</option>
+                                <option value="library">Main Library</option>
+                            </select>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="forecastChart"></canvas>
+                        </div>
+                    </section>
+
+                    <!-- FEATURE 4: Smart Room Monitor -->
+                    <section class="feature-section glass card-padding" id="room-monitor">
+                        <h2 class="section-title">Smart Room Monitor</h2>
+                        <div class="room-grid">
+                            <!-- JS will populate rooms -->
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Feature 3 removed as per user request -->
+                <div class="dashboard-grid-3col">
+                    <!-- FEATURE 5: Manual Override Panel -->
+                    <section class="feature-section glass card-padding" id="manual-override">
+                        <h2 class="section-title">Manual Override</h2>
+                        <div class="form-group">
+                            <label for="override-room">Select Room</label>
+                            <select id="override-room" class="glass-select full-width">
+                                <option>Lab 101</option>
+                                <option>Room 205</option>
+                                <option>Conf Room A</option>
+                            </select>
+                        </div>
+                        <div class="override-controls">
+                            <div class="control-item">
+                                <span><span class="material-symbols-rounded view-icon">lightbulb</span> Lights</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="override-lights" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="control-item">
+                                <span><span class="material-symbols-rounded view-icon">mode_fan</span> AC Unit</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="override-ac">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="control-item">
+                                <span><span class="material-symbols-rounded view-icon">videocam</span> Projector</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="override-proj">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="override-impact" class="impact-msg hidden">
+                            <span class="material-symbols-rounded">info</span>
+                            <span id="impact-text"></span>
+                        </div>
+                    </section>
+
+                    <!-- FEATURE 7: Carbon Impact Calculator -->
+                    <section class="feature-section glass card-padding" id="carbon-calculator">
+                        <h2 class="section-title">Carbon Configurator</h2>
+                        <div class="form-group">
+                            <label>Hours Lights Off</label>
+                            <input type="number" id="calc-lights" class="glass-input full-width" min="0" value="4">
+                        </div>
+                        <div class="form-group">
+                            <label>Hours AC Off</label>
+                            <input type="number" id="calc-ac" class="glass-input full-width" min="0" value="2">
+                        </div>
+                        <button id="calc-btn" class="glass-btn primary full-width mt-1"><span class="material-symbols-rounded">calculate</span> Calculate Impact</button>
+                        
+                        <div id="calc-result" class="calc-results hidden mt-1">
+                            <div class="result-item"><span>Energy Saved:</span> <strong id="res-energy">0 kWh</strong></div>
+                            <div class="result-item"><span>CO₂ Reduced:</span> <strong id="res-co2">0 kg</strong></div>
+                            <div class="result-item"><span>Trees Eqv:</span> <strong id="res-trees">0</strong> <span class="material-symbols-rounded" style="color:var(--success);font-size:1rem;">park</span></div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="dashboard-grid-2col">
+                    <!-- FEATURE 6: Energy Saving Game -->
+                    <section class="feature-section glass card-padding" id="gamification">
+                        <h2 class="section-title">Energy Leaders Mode</h2>
+                        <div class="badges-container">
+                            <div class="badge-item" title="Energy Hero"><span class="material-symbols-rounded" style="color:#f59e0b">star</span></div>
+                            <div class="badge-item" title="Green Champion"><span class="material-symbols-rounded" style="color:#10b981">workspace_premium</span></div>
+                            <div class="badge-item" title="Power Saver"><span class="material-symbols-rounded" style="color:#3b82f6">offline_bolt</span></div>
+                        </div>
+                        <table class="leaderboard-table mt-1">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Department</th>
+                                    <th>Saved</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><div class="rank gold">1</div></td>
+                                    <td>Computer Science</td>
+                                    <td>450 kWh</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="rank silver">2</div></td>
+                                    <td>Mechanical Eng</td>
+                                    <td>320 kWh</td>
+                                </tr>
+                                <tr>
+                                    <td><div class="rank bronze">3</div></td>
+                                    <td>Business Admin</td>
+                                    <td>280 kWh</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    
+                    <!-- FEATURE 8: Smart Alerts Panel -->
+                    <section class="feature-section glass card-padding" id="smart-alerts">
+                        <h2 class="section-title">Smart Alerts</h2>
+                        <div class="alerts-container">
+                            <div class="alert-card warning">
+                                <span class="material-symbols-rounded alert-icon">warning</span>
+                                <div class="alert-content">
+                                    <h4>Room B203 lights are ON but room is empty</h4>
+                                    <p>Detected 15 mins ago</p>
+                                </div>
+                                <button class="glass-btn resolve-btn">Resolve</button>
+                            </div>
+                            <div class="alert-card danger">
+                                <span class="material-symbols-rounded alert-icon">error</span>
+                                <div class="alert-content">
+                                    <h4>Lab 4 AC running after hours</h4>
+                                    <p>Detected 1 hr ago</p>
+                                </div>
+                                <button class="glass-btn resolve-btn">Resolve</button>
+                            </div>
+                            <div class="alert-card info">
+                                <span class="material-symbols-rounded alert-icon">info</span>
+                                <div class="alert-content">
+                                    <h4>Main server room cooling optimized</h4>
+                                    <p>System auto-adjusted</p>
+                                </div>
+                                <button class="glass-btn resolve-btn" disabled>Resolved</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="dashboard-grid-2col">
+                    <!-- FEATURE 9: Campus Map Simulation -->
+                    <section class="feature-section glass card-padding" id="campus-map">
+                        <h2 class="section-title">Campus Energy Map</h2>
+                        <div class="map-grid">
+                            <div class="building optimal" data-building="Library" data-usage="120" data-status="Optimal">Library</div>
+                            <div class="building moderate" data-building="Science Center" data-usage="340" data-status="Moderate">Science</div>
+                            <div class="building high" data-building="Engineering" data-usage="650" data-status="High Usage">Engineering</div>
+                            <div class="building optimal" data-building="Dorms A" data-usage="210" data-status="Optimal">Dorms A</div>
+                            <div class="building moderate" data-building="Dorms B" data-usage="310" data-status="Moderate">Dorms B</div>
+                            <div class="building optimal" data-building="Admin Building" data-usage="150" data-status="Optimal">Admin</div>
+                        </div>
+                        <div id="map-details" class="map-details glass-input mt-1 hidden">
+                            <h4 id="map-b-name">Building Name</h4>
+                            <p>Current Usage: <strong id="map-b-usage">0</strong> kW</p>
+                            <p>Status: <strong id="map-b-status">Unknown</strong></p>
+                        </div>
+                    </section>
+
+                    <!-- FEATURE 10: Energy Tips Generator -->
+                    <section class="feature-section glass card-padding" id="energy-tips">
+                        <div class="tips-header">
+                            <h2 class="section-title">Smart Tips</h2>
+                            <span class="material-symbols-rounded" style="color:var(--warning); font-size:2rem;">lightbulb</span>
+                        </div>
+                        <div class="tip-content glass-input mt-1" style="min-height: 100px; display: flex; align-items: center; justify-content: center; text-align: center; font-style: italic; color: var(--text-secondary);">
+                            <p id="tip-text" style="transition: opacity 0.2s;">Click below to generate a smart energy-saving tip for your campus.</p>
+                        </div>
+                        <button id="generate-tip-btn" class="glass-btn primary full-width mt-1"><span class="material-symbols-rounded">autorenew</span> Generate Tip</button>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Energy Forecast View -->
+            <div id="view-forecast" class="dashboard-content view-section" style="display: none;">
+                <h1 class="page-title">Energy Forecast Analysis</h1>
+                <div class="dashboard-grid-2col">
+                    <section class="feature-section glass card-padding">
+                        <div class="section-header">
+                            <h2 class="section-title">Weekly Trend Comparison</h2>
+                            <select id="detailed-forecast-select" class="glass-select">
+                                <option value="this_week">Days in Week (This vs Last)</option>
+                                <option value="this_month">Weeks in Month (This vs Last)</option>
+                                <option value="this_year">Months in Year (This vs Last)</option>
+                            </select>
+                        </div>
+                        <div class="chart-container" style="height: 400px;">
+                            <canvas id="detailedForecastChart"></canvas>
+                        </div>
+                    </section>
+                    
+                    <section class="feature-section glass card-padding" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <h2 class="section-title">AI Insights</h2>
+                        
+                        <div class="alert-card info" style="background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.2);">
+                            <span class="material-symbols-rounded alert-icon" style="color: var(--primary);">psychology</span>
+                            <div class="alert-content">
+                                <h4>Usage Peak Predicted</h4>
+                                <p style="color: var(--text-secondary);">Expected 15% surge in cooling demand tomorrow between 14:00 and 16:00 due to forecasted high temperatures.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="alert-card success" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.2);">
+                            <span class="material-symbols-rounded alert-icon" style="color: var(--success);">trending_down</span>
+                            <div class="alert-content">
+                                <h4>Reduction Target on Track</h4>
+                                <p style="color: var(--text-secondary);">Currently 5% below last month's average usage for the Science Center.</p>
+                            </div>
+                        </div>
+                        
+                         <div class="alert-card warning">
+                            <span class="material-symbols-rounded alert-icon" style="color: var(--warning);">wb_sunny</span>
+                            <div class="alert-content">
+                                <h4>Solar Gain Opportunity</h4>
+                                <p style="color: var(--text-secondary);">High solar irradiation expected this weekend. Recommending maximizing solar storage.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Energy Forecast View -->
+            <div id="view-forecast" class="dashboard-content view-section" style="display: none;">
+                <h1 class="page-title">Energy Forecast Analysis</h1>
+                
+                <section class="feature-section glass card-padding">
+                    <div class="section-header">
+                        <h2 class="section-title">Detailed Energy Prediction</h2>
+                        <select id="forecast-type-select" class="glass-select">
+                            <option value="this_week">This Week vs Last Week</option>
+                            <option value="this_month">This Month vs Last Month</option>
+                        </select>
+                    </div>
+                    <div class="chart-container" style="height: 400px; position: relative;">
+                        <canvas id="detailedForecastChart"></canvas>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Power Schedule View -->
+            <div id="view-schedule" class="dashboard-content view-section" style="display: none;">
+                <h1 class="page-title">Power Down Schedule Management</h1>
+                
+                <div class="dashboard-grid-2col" style="grid-template-columns: 1fr 2fr;">
+                    <!-- Add Schedule Form -->
+                    <section class="feature-section glass card-padding">
+                        <h2 class="section-title">Add New Schedule</h2>
+                        <form id="add-schedule-form">
+                            <div class="form-group">
+                                <label for="sched-room">Select Space</label>
+                                <select id="sched-room" class="glass-select full-width" required>
+                                    <option value="" disabled selected>Choose a room...</option>
+                                    <option value="Lab 101">Lab 101</option>
+                                    <option value="Room 205">Room 205</option>
+                                    <option value="Conf Room A">Conf Room A</option>
+                                    <option value="Library 1F">Library 1F</option>
+                                    <option value="Office 3B">Office 3B</option>
+                                    <option value="Lecture Hall">Lecture Hall</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sched-action">Action</label>
+                                <select id="sched-action" class="glass-select full-width" required>
+                                    <option value="Power Down All">Power Down All</option>
+                                    <option value="HVAC Off">HVAC Off</option>
+                                    <option value="Lights Off">Lights Off</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sched-time">Time</label>
+                                <input type="time" id="sched-time" class="glass-input full-width" required>
+                            </div>
+                            
+                            <button type="submit" class="glass-btn primary full-width mt-1"><span class="material-symbols-rounded">add</span> Create Schedule</button>
+                        </form>
+                    </section>
+
+                    <!-- Active Schedules List -->
+                    <section class="feature-section glass card-padding">
+                        <h2 class="section-title">Active Schedules</h2>
+                        <div class="table-responsive">
+                            <table class="schedule-table">
+                                <thead>
+                                    <tr>
+                                        <th>Space</th>
+                                        <th>Action</th>
+                                        <th>Time</th>
+                                        <th>Status</th>
+                                        <th>Settings</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="detailed-schedule-tbody">
+                                    <!-- Populated by JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Room Monitor View -->
+            <div id="view-rooms" class="dashboard-content view-section" style="display: none;">
+                <h1 class="page-title">Room Monitor</h1>
+                
+                <div class="dashboard-grid-2col" style="grid-template-columns: 1fr 2fr;">
+                    <section class="feature-section glass card-padding">
+                        <h2 class="section-title">Filter Building</h2>
+                        <div class="form-group">
+                            <select id="room-building-select" class="glass-select full-width">
+                                <option value="all">All Buildings</option>
+                                <option value="engineering">Engineering Block</option>
+                                <option value="science">Science Center</option>
+                                <option value="library">Main Library</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-1">
+                            <label>Status</label>
+                            <select id="room-status-select" class="glass-select full-width">
+                                <option value="all">All Statuses</option>
+                                <option value="active">Active</option>
+                                <option value="idle">Idle</option>
+                                <option value="offline">Offline</option>
+                            </select>
+                        </div>
+                    </section>
+                    
+                    <section class="feature-section glass card-padding">
+                        <div class="section-header">
+                            <h2 class="section-title">All Rooms Overview</h2>
+                            <button class="glass-btn"><span class="material-symbols-rounded">refresh</span> Refresh</button>
+                        </div>
+                        <div class="expanded-room-grid mt-1" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+                            <!-- Room Cards -->
+                            <div class="stat-card glass" style="display: flex; flex-direction: column; gap: 0.5rem; justify-content: flex-start; align-items: flex-start;">
+                                <div style="display: flex; justify-content: space-between; width: 100%;">
+                                    <h3 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">Lab 101</h3>
+                                    <span class="status-dot warning" title="Idle"></span>
+                                </div>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Science Center</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 0.5rem; font-size: 0.9rem;">
+                                    <span style="display: flex; align-items: center; gap: 0.2rem;"><span class="material-symbols-rounded" style="font-size: 1.1rem;">device_thermostat</span> 22°C</span>
+                                    <span style="display: flex; align-items: center; gap: 0.2rem;"><span class="material-symbols-rounded" style="font-size: 1.1rem; color: var(--warning);">lightbulb</span> ON</span>
+                                </div>
+                            </div>
+                            <div class="stat-card glass" style="display: flex; flex-direction: column; gap: 0.5rem; justify-content: flex-start; align-items: flex-start;">
+                                <div style="display: flex; justify-content: space-between; width: 100%;">
+                                    <h3 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">Room 205</h3>
+                                    <span class="status-dot success" title="Optimal"></span>
+                                </div>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Engineering Block</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 0.5rem; font-size: 0.9rem;">
+                                    <span style="display: flex; align-items: center; gap: 0.2rem;"><span class="material-symbols-rounded" style="font-size: 1.1rem;">device_thermostat</span> 24°C</span>
+                                    <span style="display: flex; align-items: center; gap: 0.2rem;"><span class="material-symbols-rounded" style="font-size: 1.1rem; color: var(--text-secondary);">lightbulb</span> OFF</span>
+                                </div>
+                            </div>
+                            <div class="stat-card glass" style="display: flex; flex-direction: column; gap: 0.5rem; justify-content: flex-start; align-items: flex-start;">
+                                <div style="display: flex; justify-content: space-between; width: 100%;">
+                                    <h3 style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">Conf Room A</h3>
+                                    <span class="status-dot primary" title="Active"></span>
+                                </div>
+                                <p style="margin: 0; font-size: 0.85rem; color: var(--text-secondary);">Main Library</p>
+                                <div style="display: flex; gap: 1rem; margin-top: 0.5rem; font-size: 0.9rem;">
+                                    <span style="display: flex; align-items: center; gap: 0.2rem;"><span class="material-symbols-rounded" style="font-size: 1.1rem;">device_thermostat</span> 21°C</span>
+                                    <span style="display: flex; align-items: center; gap: 0.2rem;"><span class="material-symbols-rounded" style="font-size: 1.1rem; color: var(--warning);">lightbulb</span> ON</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Gamification View -->
+            <div id="view-gamification" class="dashboard-content view-section" style="display: none;">
+                <h1 class="page-title">Gamification & Rewards</h1>
+                
+                <div class="dashboard-grid-3col">
+                    <section class="feature-section glass card-padding" style="grid-column: span 2;">
+                        <h2 class="section-title">Department Leaderboard</h2>
+                        <div class="table-responsive">
+                            <table class="leaderboard-table mt-1" style="width: 100%; text-align: left;">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Department</th>
+                                        <th>Energy Saved (This Month)</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="rank gold">1</div></td>
+                                        <td><strong>Computer Science</strong></td>
+                                        <td><span style="color: var(--success);">+1,250 kWh</span></td>
+                                        <td><span class="material-symbols-rounded" style="font-size: 1rem; color: #f59e0b; vertical-align: middle;">toll</span> 8,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="rank silver">2</div></td>
+                                        <td><strong>Mechanical Engineering</strong></td>
+                                        <td><span style="color: var(--success);">+980 kWh</span></td>
+                                        <td><span class="material-symbols-rounded" style="font-size: 1rem; color: #f59e0b; vertical-align: middle;">toll</span> 6,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="rank bronze">3</div></td>
+                                        <td><strong>Business Admin</strong></td>
+                                        <td><span style="color: var(--success);">+850 kWh</span></td>
+                                        <td><span class="material-symbols-rounded" style="font-size: 1rem; color: #f59e0b; vertical-align: middle;">toll</span> 5,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="rank" style="background: rgba(255,255,255,0.1);">4</div></td>
+                                        <td><strong>Arts & Humanities</strong></td>
+                                        <td><span style="color: var(--success);">+620 kWh</span></td>
+                                        <td><span class="material-symbols-rounded" style="font-size: 1rem; color: #f59e0b; vertical-align: middle;">toll</span> 4,100</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    
+                    <section class="feature-section glass card-padding">
+                        <h2 class="section-title">Your Badges</h2>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                            <div class="badge-card" style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1);">
+                                <span class="material-symbols-rounded" style="font-size: 3rem; color: #f59e0b;">star</span>
+                                <h4 style="margin-top: 0.5rem; font-size: 0.9rem;">Energy Hero</h4>
+                            </div>
+                            <div class="badge-card" style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1);">
+                                <span class="material-symbols-rounded" style="font-size: 3rem; color: #10b981;">workspace_premium</span>
+                                <h4 style="margin-top: 0.5rem; font-size: 0.9rem;">Green Champ</h4>
+                            </div>
+                            <div class="badge-card" style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1);">
+                                <span class="material-symbols-rounded" style="font-size: 3rem; color: #3b82f6;">offline_bolt</span>
+                                <h4 style="margin-top: 0.5rem; font-size: 0.9rem;">Power Saver</h4>
+                            </div>
+                            <div class="badge-card grayscale" style="text-align: center; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: var(--radius-md); border: 1px dashed rgba(255,255,255,0.2); opacity: 0.5;">
+                                <span class="material-symbols-rounded" style="font-size: 3rem; color: var(--text-secondary);">recycling</span>
+                                <h4 style="margin-top: 0.5rem; font-size: 0.9rem;">Recycle Pro</h4>
+                                <p style="font-size: 0.7rem; color: var(--text-secondary);">Locked</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Carbon Impact View -->
+            <div id="view-carbon" class="dashboard-content view-section" style="display: none;">
+                <h1 class="page-title">Carbon Impact Analysis</h1>
+                
+                <div class="dashboard-grid-2col">
+                    <section class="feature-section glass card-padding">
+                        <h2 class="section-title">Total CO₂ Reduction</h2>
+                        <div style="display: flex; align-items: center; justify-content: center; height: 250px; flex-direction: column;">
+                            <span class="material-symbols-rounded" style="font-size: 5rem; color: var(--success);">co2</span>
+                            <h2 style="font-size: 3rem; margin: 1rem 0; color: var(--text-primary);"><span id="carbon-tons-val">12.4</span> <span style="font-size: 1.5rem; color: var(--text-secondary);">Tons</span></h2>
+                            <p style="color: var(--success); display: flex; align-items: center; gap: 0.5rem;"><span class="material-symbols-rounded">trending_down</span> <span id="carbon-vs-last-year">8% vs last year</span></p>
+                        </div>
+                    </section>
+                    
+                    <section class="feature-section glass card-padding">
+                        <h2 class="section-title">Environmental Equivalencies</h2>
+                         <div class="stats-grid" style="grid-template-columns: 1fr; gap: 1rem; margin-top: 1rem;">
+                            <div class="stat-card glass" style="justify-content: flex-start; gap: 1.5rem;">
+                                <span class="material-symbols-rounded stat-icon" style="color: var(--success); font-size: 2.5rem; padding: 1rem; background: rgba(16, 185, 129, 0.1); border-radius: 50%;">forest</span>
+                                <div class="stat-info">
+                                    <h3 style="font-size: 1rem;">Trees Planted Equivalent</h3>
+                                    <p class="stat-value" id="trees-planted-val" style="font-size: 1.8rem;">568</p>
+                                </div>
+                            </div>
+                            <div class="stat-card glass" style="justify-content: flex-start; gap: 1.5rem;">
+                                <span class="material-symbols-rounded stat-icon" style="color: var(--primary); font-size: 2.5rem; padding: 1rem; background: rgba(59, 130, 246, 0.1); border-radius: 50%;">directions_car</span>
+                                <div class="stat-info">
+                                    <h3 style="font-size: 1rem;">Cars Off The Road</h3>
+                                    <p class="stat-value" id="cars-off-val" style="font-size: 1.8rem;">24</p>
+                                </div>
+                            </div>
+                             <div class="stat-card glass" style="justify-content: flex-start; gap: 1.5rem;">
+                                <span class="material-symbols-rounded stat-icon" style="color: var(--warning); font-size: 2.5rem; padding: 1rem; background: rgba(245, 158, 11, 0.1); border-radius: 50%;">house</span>
+                                <div class="stat-info">
+                                    <h3 style="font-size: 1rem;">Homes Powered (Year)</h3>
+                                    <p class="stat-value" id="homes-powered-val" style="font-size: 1.8rem;">1.5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- REUSABLE SUCCESS MODAL -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content glass">
+            <span class="material-symbols-rounded modal-icon">check_circle</span>
+            <h2 style="color: var(--text-primary); margin: 0;">Issue Resolved!</h2>
+            <p style="color: var(--text-secondary); margin: 0;" id="modal-msg">The alert has been successfully cleared and logged.</p>
+            <div class="modal-actions">
+                <button id="close-modal-btn" class="glass-btn primary" style="width: 100%;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
