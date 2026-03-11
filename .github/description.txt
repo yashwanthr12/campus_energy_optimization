@@ -1,0 +1,1 @@
+🌱 ML-powered web app using FastAPI & Scikit-Learn to optimize campus energy consumption by analyzing occupancy trends, scheduling HVAC/lighting power-downs, and visualizing real-time forecasts.
